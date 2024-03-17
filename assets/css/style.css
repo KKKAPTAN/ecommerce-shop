@@ -849,7 +849,7 @@ footer .copyright {
     margin-top: 0;
     padding-top: 0px;
     position: relative;
-    z-index: 100000;
+    z-index: 10;
     background: white;
 }
 
