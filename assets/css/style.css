@@ -1,5 +1,22 @@
 /* Main page */
 
+/* progressier */
+
+button.progressier-install-button {
+    border: none;
+    outline: navajowhite;
+    background: transparent;
+}
+
+#about-app h1 a button.progressier-install-button {
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 700;
+    color: cadetblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* popup */
 
 .popup {
@@ -1508,6 +1525,11 @@ tbody#table-body {
     #about-app h1 {
         font-size: 48px;
     }
+
+    #about-app h1 a button.progressier-install-button {
+        font-size: 48px;
+    }
+
 
     #about-app .video {
         width: 100%;
