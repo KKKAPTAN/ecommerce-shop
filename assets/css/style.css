@@ -18,6 +18,10 @@ button.progressier-install-button {
     cursor: pointer;
 }
 
+#about-app h1 a button.progressier-install-button span span{
+    padding: unset !important;
+}
+
 /* popup */
 
 .popup {
