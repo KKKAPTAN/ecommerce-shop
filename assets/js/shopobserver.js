@@ -1,3 +1,8 @@
+let delay = 0.1;
+if (window.innerWidth < 568) {
+    delay = 0;
+}
+
 function load(entry) {
     const products = entry.querySelectorAll('.product-container .product');
     for (let i = 0; i < products.length; i++) {
@@ -10,12 +15,12 @@ function load(entry) {
 function observeIntersection(targetElement) {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
-            if (entry.intersectionRatio >= 0.1) {
+            if (entry.intersectionRatio >= delay) {
                 load(entry.target);
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: delay });
 
     observer.observe(targetElement);
 }
