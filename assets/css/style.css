@@ -6,6 +6,7 @@ button.progressier-install-button {
     border: none;
     outline: navajowhite;
     background: transparent;
+    cursor: pointer;
 }
 
 #about-app h1 a button.progressier-install-button {
