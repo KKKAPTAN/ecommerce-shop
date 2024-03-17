@@ -12,7 +12,7 @@
 <body>
     
     <section id="header" class="header">
-        <a href="#"><img src="assets/img/logo.png" alt="Cara logo"></a>
+        <a href="/"><img src="assets/img/logo.png" alt="Cara logo"></a>
 
 
         <nav>
@@ -36,37 +36,24 @@
 
     <section id="product-details" class="section-p1">
         <div class="single-product-image">
-            <img src="assets/img/products/f1.jpg" width="100%" id="main-image" alt="">
-            <div class="small-image-group">
-                <div class="small-image-column">
-                    <img src="assets/img/products/f1.jpg" width="100%" alt="" class="small-image">
-                </div>
-                <div class="small-image-column">
-                    <img src="assets/img/products/f2.jpg" width="100%" alt="" class="small-image">
-                </div>
-                <div class="small-image-column">
-                    <img src="assets/img/products/f3.jpg" width="100%" alt="" class="small-image">
-                </div>
-                <div class="small-image-column">
-                    <img src="assets/img/products/f4.jpg" width="100%" alt="" class="small-image">
-                </div>
-            </div>
+            <img src="" width="100%" id="main-image" alt="">
         </div>
 
         <div class="single-product-details">
-            <h6>Home / T-Shirts</h6>
-            <h4>Men's Fashion T-Shirt</h4>
-            <h2>$139.00</h2>
+            <h6 id="productLink"><a href=""></a> / <span id="productType"></span></h6>
+            <h4 id="productName"></h4>
+            <h2 id="productPrice"></h2>
             <select name="" id="" aria-placeholder="Select size">
                 <option value="">Small</option>
                 <option value="">Large</option>
                 <option value="">XL</option>
                 <option value="">XXL</option>
             </select>
-                <input type="number" step="1" value="1" min="1">
-                <button class="normal">Add to cart</button>
+                <input id="productQuantity" type="number" step="1" value="1" min="1">
+                <button id="addProduct" class="normal">Add to cart</button>
                 <h4>Product Details</h4>
-                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita repudiandae cumque eligendi molestias, omnis optio dolores dignissimos saepe, ducimus quia, eveniet minima! Vel cum magni laudantium omnis ut?</span>
+                <span>
+                    Introducing the hidden gem of your wardrobe - the embodiment of sophistication and style, brought to you by Cara Clothing. Imagine slipping into a piece of attire that speaks volumes without uttering a word, effortlessly blending elegance with an understated allure.</span>
         </div>
     </section>
 
@@ -77,8 +64,8 @@
             <div class="product">
                 <img src="assets/img/products/n1.jpg" alt="">
                 <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>Cara™</span>
+                    <h5>Cara Classic Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -86,15 +73,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4 class="current-price">$24</h4>
                 </div>
-                <a href="#"><i class="fas fa-shopping-basket cart"></i></a>
+                <button class="add-to-cart"><i class="fas fa-shopping-basket cart"></i></button>
             </div>
             <div class="product">
                 <img src="assets/img/products/n2.jpg" alt="">
                 <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>Cara™</span>
+                    <h5>Cara Striped Classic Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -102,15 +89,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4 class="current-price">$24</h4>
                 </div>
-                <a href="#"><i class="fas fa-shopping-basket cart"></i></a>
+                <button class="add-to-cart"><i class="fas fa-shopping-basket cart"></i></button>
             </div>
             <div class="product">
                 <img src="assets/img/products/n3.jpg" alt="">
                 <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>Cara™</span>
+                    <h5>Cara Formal Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -118,15 +105,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4 class="current-price">$24</h4>
                 </div>
-                <a href="#"><i class="fas fa-shopping-basket cart"></i></a>
+                <button class="add-to-cart"><i class="fas fa-shopping-basket cart"></i></button>
             </div>
             <div class="product">
                 <img src="assets/img/products/n4.jpg" alt="">
                 <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>Cara™</span>
+                    <h5>Cara Travel T-shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -134,9 +121,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <h4 class="current-price">$24</h4>
                 </div>
-                <a href="#"><i class="fas fa-shopping-basket cart"></i></a>
+                <button class="add-to-cart"><i class="fas fa-shopping-basket cart"></i></button>
             </div>
         </div>
     </section>
@@ -158,7 +145,7 @@
         <div class="column">
             <img src="assets/img/logo.png" alt="">
             <h4>Contact</h4>
-            <p> <strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p> <strong>Address:</strong> Khao San Road, Street 11, Bangkok</p>
             <p> <strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
             <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
             <div class="socials">
@@ -207,18 +194,14 @@
         </div>
     </footer>
 
-    <script>
-        const mainImage = document.getElementById("main-image")
-        const smallImg = document.getElementsByClassName("small-image")
-
-        for(let i = 0; i < smallImg.length; i++){
-            smallImg[i].onclick = changeImg = () => {
-                mainImage.src = smallImg[i].src
-            }
-        }
-        
-    </script>
-
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/newsletter.js"></script>
+    <script src="assets/js/updatecart.js"></script>
+    <script src="assets/js/singleproduct.js"></script>
+    <script src="assets/js/addtocart.js"></script>
+    <script src="assets/js/observer.js"></script>
+    <script src="assets/js/params.js"></script>
+    <script src="assets/js/spaddtocart.js"></script>
+
 </body>
 </html>

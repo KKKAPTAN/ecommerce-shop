@@ -1,110 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico   ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/general.css">
-    <title>Contact</title>
+    <title>Cara</title>
 </head>
+
 <body>
-    
+
     <section id="header" class="header">
         <a href="/"><img src="assets/img/logo.png" alt="Cara logo"></a>
 
-
         <nav>
             <ul id="navbar" class="navbar">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </nav>
 
         <div id="mobile">
-            <a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping active"></i></a>
+            <a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
 
     </section>
 
-    <section id="header-banner" class="header-banner cart-header">
-        <h2>#cart</h2>
-        <p>Add your coupon code & SAVE upto 70%</p>
-    </section>
-
-    <section id="cart" class="section-p1">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-            <tbody id="table-body">
-            </tbody>
-        </table>
-    </section>
-
-    <section id="cart-add" class="section-p1">
-        <div class="apply-coupon">
-            <h3>Apply Coupon</h3>
-            <input type="text" placeholder="Enter Your Coupon">
-            <button class="normal">Apply</button>
-        </div>
-        <div class="cart-totals">
-            <h3>Cart totals</h3>
-            <table>
-                <tr>
-                    <td>
-                        Cart Subtotal
-                    </td>
-                    <td id="cart-subtotal">
-                        $ 335
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Shipping
-                    </td>
-                    <td>
-                        Free
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Coupon
-                    </td>
-                    <td id="coupon-sale">
-                        None
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Total</strong>
-                    </td>
-                    <td>
-                        <strong id="total">$ 335</strong>
-                    </td>
-                </tr>
-            </table>
-            <button id="proceedToCheckout" class="normal">Proceed to checkout</button>
-        </div>
-    </section>
-
-    <section id="cart-empty">
-        <img src="assets/img/empty-cart.webp" alt="">
-        <p>Your cart is empty, which means.. <br> It's time to buy something from <a href="shop.html">Cara!</a></p>
+    <section id="checkout">
+        <h1>Payment successful!</h1>
+        <h2>You've bought <span id="itemsAmount"></span>!</h2>
+        <h2>For total <span id="totalPrice"></span>!</h2>
+        <h4>Thank you for staying with Cara! <br> You've been granted with coupon!</h4>
+        <div class="coupon">Try to Enter Total amount in Coupon field</div>                 
     </section>
 
     <footer class="section-p1">
@@ -159,8 +96,7 @@
             <p>&#169; 2021, kerexaaa - HTML CSS Eccommerce Template</p>
         </div>
     </footer>
-
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/checkout.js"></script>
 </body>
 </html>

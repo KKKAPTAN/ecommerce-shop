@@ -12,7 +12,7 @@
 <body>
     
     <section id="header" class="header">
-        <a href="#"><img src="assets/img/logo.png" alt="Cara logo"></a>
+        <a href="/"><img src="assets/img/logo.png" alt="Cara logo"></a>
 
 
         <nav>
@@ -47,11 +47,11 @@
             <div>
                 <li>
                     <i class="fas fa-map"></i>
-                    <p>56 Glassford Street Glasglow G1 1UL New York </p>
+                    <p> Khao San Road, Street 11, Bangkok</p>
                 </li>
                 <li>
                     <i class="fas fa-envelope"></i>
-                    <p>contact@example.com </p>
+                    <p>carashop@online.com</p>
                 </li>
                 <li>
                     <i class="fas fa-phone-alt"></i>
@@ -70,14 +70,14 @@
     </section>
 
     <section id="form-details">
-        <form action="#">
+        <form id="leaveAMessageForm">
             <span>LEAVE A MESSAGE</span>
             <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
+            <input id="username" type="text" placeholder="Your name" required>
+            <input type="email" id="user_email" placeholder="E-mail" required>
+            <input type="text" id="message_subject" placeholder="Subject" required>
+            <textarea name="" cols="30" rows="10" id="message" placeholder="Your Message"></textarea>
+            <button type="submit" id="leaveAMessage" class="normal">Submit</button>
         </form>
 
         <div class="people">
@@ -113,7 +113,7 @@
         <div class="column">
             <img src="assets/img/logo.png" alt="">
             <h4>Contact</h4>
-            <p> <strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p> <strong>Address:</strong> Khao San Road, Street 11, Bangkok</p>
             <p> <strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
             <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
             <div class="socials">
@@ -163,6 +163,8 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/updatecart.js"></script>
 
 </body>
 </html>

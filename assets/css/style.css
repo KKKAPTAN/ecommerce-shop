@@ -5,7 +5,7 @@
 .popup {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     position: fixed;
     z-index: 10000000;
     justify-content: center;
@@ -348,6 +348,63 @@ button#closePopUp {
     color: #088178;
 }
 
+h4.current-price::after {
+    position: absolute;
+    content: "$80";
+    font-size: 14px;
+    left: 55px;
+    color: #1a1a1a;
+}
+
+.scratch-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: silver;
+    opacity: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.coupon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+h4.current-price::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 2px;
+    bottom: 35px;
+    z-index: 10;
+    left: 55px;
+    rotate: 150deg;
+    background: #ec554e;
+}
+
+
 #feature-products .product .cart {
     width: 40px;
     height: 40px;
@@ -356,6 +413,34 @@ button#closePopUp {
     background-color: #e8f6ea;
     color: #088178;
     border: 1px solid #cce7d0;
+}
+
+#lg-bag {
+    position: relative;
+}
+
+#lg-bag span {
+    position: absolute;
+    background-color: red;
+    right: 10px;
+    top: -10px;
+    width: 16px;
+    color: white;
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    z-index: 10;
+    padding-top: 4px;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+button.add-to-cart {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -651,6 +736,11 @@ footer .copyright {
 
 /* Single product */
 
+#productLink a {
+    text-decoration: none;
+    color: #465b52;
+}
+
 #product-details {
     display: flex;
     margin-top: 20px;
@@ -751,8 +841,25 @@ footer .copyright {
     width: 50%;
 }
 
+.blog-details p {
+    height: 0px;
+    font-size: large;
+    overflow: hidden;
+    transition: all .3s;
+    margin-top: 0;
+    padding-top: 0px;
+    position: relative;
+    z-index: 100000;
+    background: white;
+}
+
+.blog-details h4 {
+    font-size: xx-large;
+}
+
 #blog .blog-details a {
     text-decoration: none;
+    cursor: pointer;
     font-size: 14px;
     color: #000;
     font-weight: 700;
@@ -768,6 +875,7 @@ footer .copyright {
     position: absolute;
     top: 4px;
     right: -56px;
+    transition: .3s ease;
 }
 
 #blog .blog-details a:hover {
@@ -939,7 +1047,47 @@ footer .copyright {
     color: #000;
 }
 
+/* checkout */
+
+#checkout h1 {
+    color: greenyellow;
+}
+
+section#checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90dvh;
+}
+
+#itemsAmount {
+    color: #ef3636;
+}
+
+#totalPrice {
+    color: green;
+}
+
 /* Cart page */
+
+section#cart-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+section#cart-empty p {
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+section#cart-empty p a {
+    color: #465b52;
+}
+
 
 #cart {
     overflow-x: auto;
@@ -947,6 +1095,15 @@ footer .copyright {
 
 #header-banner.cart-header {
     background-image: url("../img/about/banner.png");
+}
+
+tbody#table-body {
+    width: 100%;
+    position: relative;
+}
+
+.empty-cart {
+    width: 100%;
 }
 
 #cart table thead {
