@@ -1081,6 +1081,7 @@ section#checkout {
     align-items: center;
     justify-content: space-evenly;
     height: 90dvh;
+    text-align: center;
 }
 
 #itemsAmount {
