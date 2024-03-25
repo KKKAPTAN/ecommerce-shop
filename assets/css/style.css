@@ -22,6 +22,10 @@ button.progressier-install-button {
     padding: unset !important;
 }
 
+#header-banner p {
+    text-align: center;
+}
+
 /* popup */
 
 .popup {
