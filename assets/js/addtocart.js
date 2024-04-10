@@ -34,7 +34,11 @@ addToCartButtons.forEach(button => {
             }
         } else {
             let length = JSON.parse(localStorage.getItem('cart')).length;
-            document.getElementById('lg-bag').insertAdjacentHTML('afterbegin', `<span id="cartCount">${length}`);
+            if (window.innerWidth < 568) {
+                document.getElementById('mobile').insertAdjacentHTML('afterbegin', `<span id="cartCount">${length}`);
+            } else {
+                document.getElementById('lg-bag').insertAdjacentHTML('afterbegin', `<span id="cartCount">${length}`);
+            }
         }
     });
 });

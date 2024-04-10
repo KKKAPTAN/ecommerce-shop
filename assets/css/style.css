@@ -462,6 +462,23 @@ h4.current-price::before {
     text-align: center;
 }
 
+#mobile span {
+    position: absolute;
+    background-color: red;
+    right: 30px;
+    top: -5px;
+    width: 16px;
+    color: white;
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    z-index: 10;
+    padding-top: 4px;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+}
+
 button.add-to-cart {
     cursor: pointer;
     border: none;
@@ -1273,6 +1290,7 @@ tbody#table-body {
     }
 
     #navbar.active {
+        z-index: 1000000000;
         right: 0;
     }
 
@@ -1281,6 +1299,7 @@ tbody#table-body {
     }
 
     #mobile {
+        position: relative;
         display: flex;
         align-items: center;
     }
