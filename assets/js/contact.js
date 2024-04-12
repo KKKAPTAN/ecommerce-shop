@@ -12,7 +12,7 @@ form.addEventListener('submit', event => {
     const subject = document.getElementById('message_subject').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    const logMessage = `A letter from ${username} sent successfully to our team! We'll reach you as soon as possible!`;
+    const logMessage = `Повідомлення від ${username} надіслано! Ми перетелефонуємо Вам якомога швидше!`;
     const logType = 'success';
     body.insertAdjacentHTML('afterbegin', logGenerator(logMessage, logType));
 

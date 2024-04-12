@@ -21,8 +21,8 @@ const updateSubscribedEmails = (email) => {
 }
 
 const displaySubscriptionResult = (email) => {
-    const successMessage = 'You\'ve been succesfully subscribed for Cara newsletters!';
-    const subscribed = 'This email is already subscribed';
+    const successMessage = 'Ви успішно підписали на розсилку повідомлень від Cara!';
+    const subscribed = 'Ця пошта вже підписана';
     const logMessage = isSubscribed(email) ? subscribed : successMessage;
     const logType = isSubscribed(email) ? 'error' : 'success';
     body.insertAdjacentHTML('afterbegin', logGenerator(logMessage, logType));

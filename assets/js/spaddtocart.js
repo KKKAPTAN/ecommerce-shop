@@ -10,7 +10,7 @@ addToCartButton.addEventListener('click', function () {
         price: productPrice,
     };
 
-    const productQuantity = document.getElementById('productQuantity').value;
+    const productQuantity = Number(document.getElementById('productQuantity').value);
     document.getElementById('productQuantity').value = 1;
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/general.css">
-    <title>Product</title>
+    <title>Товар</title>
 </head>
+
 <body>
-    
+
     <section id="header" class="header">
         <a href="index.html"><img src="assets/img/logo.png" alt="Cara logo"></a>
 
 
         <nav>
             <ul id="navbar" class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Головна</a></li>
+                <li><a class="active" href="shop.html">Товар</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
@@ -41,32 +43,44 @@
         </div>
 
         <div class="single-product-details">
-            <h6 id="productLink"><a href=""></a> / <span id="productType"></span></h6>
+            <h6 id="productLink">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <svg fill="#000000" height="16px" width="16px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+                    xml:space="preserve">
+                    <path id="XMLID_6_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M205.606,234.394
+                    c5.858,5.857,5.858,15.355,0,21.213C202.678,258.535,198.839,260,195,260s-7.678-1.464-10.606-4.394l-80-79.998
+                    c-2.813-2.813-4.394-6.628-4.394-10.606c0-3.978,1.58-7.794,4.394-10.607l80-80.002c5.857-5.858,15.355-5.858,21.213,0
+                    c5.858,5.857,5.858,15.355,0,21.213l-69.393,69.396L205.606,234.394z" />
+                </svg> <a href="">Повернутись назад</a>
+            </h6>
             <h4 id="productName"></h4>
             <h2 id="productPrice"></h2>
             <select name="" id="" aria-placeholder="Select size">
-                <option value="">Small</option>
-                <option value="">Large</option>
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
                 <option value="">XL</option>
-                <option value="">XXL</option>
             </select>
-                <input id="productQuantity" type="number" step="1" value="1" min="1">
-                <button id="addProduct" class="normal">Add to cart</button>
-                <h4>Product Details</h4>
-                <span>
-                    Introducing the hidden gem of your wardrobe - the embodiment of sophistication and style, brought to you by Cara Clothing. Imagine slipping into a piece of attire that speaks volumes without uttering a word, effortlessly blending elegance with an understated allure.</span>
+            <input id="productQuantity" type="number" step="1" value="1" min="1">
+            <button id="addProduct" class="normal">Додати в кошик</button>
+            <h4>Опис</h4>
+            <span>
+                Представляємо вам приховану перлину вашого гардеробу - втілення вишуканості та стилю від Cara Clothing.
+                Уявіть, як ви вдягаєтесь у вбрання, яке говорить про вас без зайвих слів, легко поєднуючи елегантність
+                зі стриманою привабливістю.
+            </span>
         </div>
     </section>
 
     <section id="feature-products" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Morden Design</p>
+        <h2>Часто шукають</h2>
         <div class="product-container">
             <div class="product">
                 <img src="assets/img/products/n1.jpg" alt="">
                 <div class="description">
                     <span>Cara™</span>
-                    <h5>Cara Classic Shirt</h5>
+                    <h5>Cara Класична сорочка</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -82,7 +96,7 @@
                 <img src="assets/img/products/n2.jpg" alt="">
                 <div class="description">
                     <span>Cara™</span>
-                    <h5>Cara Striped Classic Shirt</h5>
+                    <h5>Cara Класична сорочка</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -98,7 +112,7 @@
                 <img src="assets/img/products/n3.jpg" alt="">
                 <div class="description">
                     <span>Cara™</span>
-                    <h5>Cara Formal Shirt</h5>
+                    <h5>Cara Ділова сорочка</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -114,7 +128,7 @@
                 <img src="assets/img/products/n4.jpg" alt="">
                 <div class="description">
                     <span>Cara™</span>
-                    <h5>Cara Travel T-shirt</h5>
+                    <h5>Cara футболка "Гори"</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -128,74 +142,75 @@
             </div>
         </div>
     </section>
-    
+
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
+            <h4>Підпишіться на розсилку новин</h4>
             <p>
-                Get E-mail updates about our latest shop and <span>special offers.</span>
+                Отримуйте електронну пошту з новинами про наш новий магазин та <span>акційні пропозиції.</span>
             </p>
         </div>
         <form class="form" id="formNewsletter">
-            <input type="email" id="newsletterInput" placeholder="Your email address" required>
-            <button type="submit" id="newsletterSubmit" class="normal">Sign Up</button>
+            <input type="email" id="newsletterInput" placeholder="Ваша електрона адреса..." required>
+            <button type="submit" id="newsletterSubmit" class="normal">Підписатись</button>
         </form>
     </section>
+
 
     <footer class="section-p1">
         <div class="column">
             <img src="assets/img/logo.png" alt="">
-            <h4>Contact</h4>
-            <p> <strong>Address:</strong> Khao San Road, Street 11, Bangkok</p>
-            <p> <strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
-            <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <h4>Контакти</h4>
+            <p> <strong>Адреса:</strong> Хрещатик, Київ</p>
+            <p> <strong>Телефон:</strong> +380 44 832 1221 /+380 63 489 4908</p>
+            <p> <strong>Робочі часи:</strong> 10:00 - 18:00, Пон - Суб</p>
             <div class="socials">
-                <h4>Follow us</h4>
+                <h4>Наші соціальні мережі</h4>
                 <div class="socials-icon">
                     <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
                     <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
                 </div>
             </div>
         </div>
 
         <div class="column ">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact us</a>
+            <h4>FAQ</h4>
+            <a href="#">Про нас</a>
+            <a href="#">Замовлення/доставка</a>
+            <a href="#">Політика приватності</a>
+            <a href="#">Умови та положення</a>
+            <a href="#">Зв'язатись з нами</a>
         </div>
 
         <div class="column ">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track my order</a>
-            <a href="#">Help</a>
+            <h4>Мій аккаунт</h4>
+            <a href="#">Увійти</a>
+            <a href="#">Кошик</a>
+            <a href="#">Мій вішліст</a>
         </div>
 
         <div class="column install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-                        <div class="row">
-                <button class="progressier-install-button" style="width: 170px; height: 48px; background-image: url('assets/img/pay/app.jpg');" data-icons="false" data-install=" " data-installed=" ">
+            <h4>Завантажити додаток</h4>
+            <p>З App Store або Google Play</p>
+            <div class="row">
+                <button class="progressier-install-button"
+                    style="width: 170px; height: 48px; background-image: url('assets/img/pay/app.jpg');"
+                    data-icons="false" data-install=" " data-installed=" ">
                 </button>
-                <button class="progressier-install-button" style="width: 170px; height: 48px; background-image: url('assets/img/pay/play.jpg');" data-icons="false" data-install=" " data-installed=" ">
+                <button class="progressier-install-button"
+                    style="width: 170px; height: 48px; background-image: url('assets/img/pay/play.jpg');"
+                    data-icons="false" data-install=" " data-installed=" ">
                 </button>
             </div>
-            <p>Secured Payment Gateways</p>
+            <p>Доступні методи оплати</p>
             <img src="assets/img/pay/pay.png" alt="">
         </div>
 
         <div class="copyright">
-            <p>&#169; 2024 Kaptan. All right reserved.</p>
+            <p>&#169; 2024 Kaptan. Всі права захищені.</p>
         </div>
     </footer>
+
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/newsletter.js"></script>
@@ -207,4 +222,5 @@
     <script src="assets/js/spaddtocart.js"></script>
 
 </body>
+
 </html>

@@ -5,10 +5,12 @@ const checkoutParam = urlParams.get('checkoutParam');
 document.getElementById('totalPrice').innerText = `${checkoutParam}`;
 amount = JSON.parse(localStorage.getItem('cart')).length;
 
-if (amount > 1) {
-    document.getElementById('itemsAmount').innerText = `${amount} items`;
+if (amount > 5) {
+    document.getElementById('itemsAmount').innerText = `${amount} товарів`;
+} else if (amount > 1 && amount < 5){
+    document.getElementById('itemsAmount').innerText = `${amount} товари`;
 } else {
-    document.getElementById('itemsAmount').innerText = `${amount} item`;
+    document.getElementById('itemsAmount').innerText = `${amount} товар`;
 }
 
 localStorage.removeItem('cart');
