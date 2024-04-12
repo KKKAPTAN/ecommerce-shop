@@ -614,6 +614,127 @@ button.add-to-cart {
     font-size: 18px;
 }
 
+/* order */
+
+section.section-p1.order-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-left, .order-right {
+    width: 45%;
+}
+
+.order-left img {
+    width: 100%;
+}
+
+.order-right ul li {
+    padding: 10px 0;
+}
+
+section.section-p1.delivery-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/* reg */
+
+.reg-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #088178;
+    border-radius: 25px;
+    padding: 2rem;
+    min-height: 400px;
+    height: auto;
+}
+ 
+.reg-wrapper form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.reg-wrapper form div input{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.reg-wrapper form div label{
+    font-size: 1.25rem;
+}
+
+#reg-button, #log-button, #cab-button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#cab-form .input-container {
+    width: 50%;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #999;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label,
+.input-container label.active {
+    top: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-container svg {
+    position: absolute;
+    cursor: pointer;
+    right: -48px;
+    transition:all .3s;
+    opacity: 1;
+    bottom: 8px;
+}
+
+/* policy */
+
+.user-privacy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Newsletter */
 
 #newsletter {
