@@ -17,4 +17,3 @@ document.getElementById('productLink').style.width = 'max-content';
 document.getElementById('productLink').querySelector('a').innerText = `${redirectedFrom}`;
 document.getElementById('productPrice').innerText = price;
 document.getElementById('productName').innerText = name;
-document.getElementById('productLink').querySelector('span').innerText = "Одяг";

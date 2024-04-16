@@ -5,6 +5,10 @@ if (localStorage.getItem('user') == null) {
     window.location.href = 'cabinet.html';
 }
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+
 const inputs = document.querySelectorAll('.input-container input');
 inputs.forEach(input => {
     input.addEventListener('focus', function () {
@@ -60,6 +64,11 @@ logForm.addEventListener('submit', (e) => {
 
     const userJSON = JSON.stringify(user);
     localStorage.setItem('user', userJSON);
+
+    if (urlParams.size !== 0) {
+        window.location.href = `${urlParams.get('redirectedURL')}`;
+        return;
+    }
 
     window.location.href = 'cabinet.html';
 })

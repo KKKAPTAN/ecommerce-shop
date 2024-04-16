@@ -105,7 +105,17 @@ document.querySelector('.apply-coupon button').addEventListener('click', () => {
     }, Math.random() * 100);
 })
 
+const userI = JSON.parse(localStorage.getItem('user'));
+
 document.getElementById('proceedToCheckout').addEventListener('click', () => {
+    if(!userI) {
+        window.location.href = `registration.html?redirectedURL=${encodeURIComponent(window.location.href)}`;
+        return;
+    }
+    if(!userI.token) {
+        window.location.href = `registration.html?redirectedURL=${encodeURIComponent(window.location.href)}`;
+        return;
+    }
     const checkoutParam = document.getElementById('total').innerText;
     window.location.href = `checkout.html?checkoutParam=${encodeURIComponent(checkoutParam)}`;
 })
