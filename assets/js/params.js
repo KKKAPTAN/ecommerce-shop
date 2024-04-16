@@ -18,8 +18,6 @@ products.forEach(product => {
         const price = element.querySelector('h4').innerHTML;
         const imageUrl = element.querySelector('img').getAttribute('src');
 
-        console.log(redirectedLink);
-
         window.location.href = `sproduct.html?redirectedFrom=${encodeURIComponent(redirectedFrom)}&redirectedLink=${encodeURIComponent(redirectedLink)}&name=${encodeURIComponent(name)}&price=${encodeURIComponent(price)}&imageUrl=${encodeURIComponent(imageUrl)}`;
     })
 })
