@@ -56,6 +56,9 @@ cabForm.addEventListener('submit', (e) => {
         token: 1
     }
 
+    console.log(userNew);
+    
     const userJSON = JSON.stringify(userNew);
-    localStorage.setItem('user', userNew);
+    console.log(userJSON);
+    localStorage.setItem('user', userJSON);
 })

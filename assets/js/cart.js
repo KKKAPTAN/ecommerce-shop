@@ -31,7 +31,7 @@ const calcTotal = (couponApplied) => {
     let finalPrice;
     const total = document.querySelectorAll('#subtotal');
     total.forEach(sub => {
-        thisSubTotal = parseFloat(sub.innerHTML.replace('$', ''))
+        thisSubTotal = parseFloat(sub.innerHTML.replace('₴', ''))
         result += thisSubTotal;
     })
     if (couponApplied) {
@@ -39,8 +39,8 @@ const calcTotal = (couponApplied) => {
     } else {
         finalPrice = result;
     }
-    document.getElementById('cart-subtotal').innerText = "$" + result;
-    document.getElementById('total').innerText = "$" + finalPrice;
+    document.getElementById('cart-subtotal').innerText = "₴" + result;
+    document.getElementById('total').innerText = "₴" + finalPrice;
     return finalPrice;
 }
 
@@ -48,7 +48,7 @@ const updateQuantity = (event) => {
     const thisRow = event.target.parentNode.parentNode;
     const value = event.target.value;
     const price = thisRow.querySelector('#price').innerText;
-    thisRow.querySelector('#subtotal').innerText = "$" + parseFloat(price.replace('$', '')) * value;
+    thisRow.querySelector('#subtotal').innerText = "₴" + parseFloat(price.replace('₴', '')) * value;
     calcTotal(couponApplied);
 }
 
@@ -59,7 +59,7 @@ const rowBuilder = (index) => {
         <td>${items[index].name}</td>
         <td id="price">${items[index].price}</td>
         <td><input onchange="updateQuantity(event)" type="number" min=1 value="${items[index].quantity}"></td>
-        <td id="subtotal">$${parseFloat(items[index].price.replace('$', '')) * items[index].quantity}</td>
+        <td id="subtotal">${parseFloat(items[index].price.replace('₴', '')) * items[index].quantity}₴</td>
         </tr>
     `
 }
@@ -82,7 +82,7 @@ const logGenerator = (message, type) => {
 
 document.querySelector('.apply-coupon button').addEventListener('click', () => {
     let value = document.querySelector('.apply-coupon input').value;
-    if (value == document.getElementById('total').innerHTML.replace('$', '')) {
+    if (value == document.getElementById('total').innerHTML.replace('₴', '')) {
         document.getElementById('coupon-sale').innerHTML = '25%';
         couponApplied = true;
         calcTotal(couponApplied)

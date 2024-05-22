@@ -1,4 +1,5 @@
 let delay = 0.1;
+
 if (window.innerWidth < 568) {
     delay = 0;
 }
@@ -11,6 +12,8 @@ function load(entry) {
         }, i * 100);
     }
 }
+
+//callback
 
 function observeIntersection(targetElement) {
     const observer = new IntersectionObserver(function(entries) {
